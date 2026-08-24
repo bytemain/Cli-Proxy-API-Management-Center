@@ -514,6 +514,18 @@
     "pay_as_you_go_enabled": "已啟用，封頂 {{cap}}",
     "pay_as_you_go_disabled": "未啟用"
   },
+  "qwen_quota": {
+    "title": "通義千問 Token Plan",
+    "empty_title": "無通義千問憑證",
+    "empty_desc": "請先在 OAuth 頁面登入通義千問，以檢視 Token Plan 用量。",
+    "idle": "點擊此處重新整理 Token Plan 用量",
+    "loading": "正在載入 Token Plan 用量...",
+    "load_failed": "載入用量失敗：{{message}}",
+    "missing_auth_index": "驗證檔案缺少 auth_index",
+    "empty_data": "未找到有效的 Token Plan",
+    "expires_at": "{{date}} 到期",
+    "console_link": "前往百煉控制台"
+  },
   "vertex_import": {
     "title": "Vertex JSON 登入",
     "description": "上傳 Google 服務帳號 JSON，使用 CLI vertex-import 同步規則寫入 auth-dir/vertex-<project>.json。",
@@ -705,6 +717,15 @@
     "xai_oauth_title": "xAI OAuth",
     "xai_oauth_button": "開始 xAI 登入",
     "xai_oauth_hint": "透過 OAuth 流程登入 xAI Grok 服務，自動取得並儲存驗證檔案。",
+    "qianwen_oauth_title": "通義千問（百煉）",
+    "qianwen_oauth_button": "開始通義千問登入",
+    "qianwen_oauth_hint": "透過 OAuth 流程登入阿里雲百煉，用於查詢 Token Plan 用量與配額。與推理用的 qwen-api-key 相互獨立。",
+    "qianwen_oauth_url_label": "授權連結:",
+    "qianwen_oauth_status_waiting": "等待驗證中...",
+    "qianwen_oauth_status_success": "驗證成功！",
+    "qianwen_oauth_status_error": "驗證失敗:",
+    "qianwen_oauth_start_error": "啟動通義千問 OAuth 失敗:",
+    "qianwen_oauth_polling_error": "檢查驗證狀態失敗:",
     "xai_oauth_url_label": "授權連結:",
     "xai_open_link": "開啟連結",
     "xai_copy_link": "複製連結",
@@ -1500,7 +1521,8 @@
       "qiniuCloud": "七牛雲",
       "lmuAI": "LMU AI（靈眸AI）",
       "infistar": "無限星河",
-      "kimi": "Kimi"
+      "kimi": "Kimi",
+      "qwen": "Qwen"
     },
     "table": {
       "key": "金鑰",

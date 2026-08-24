@@ -397,3 +397,24 @@ export interface XaiQuotaState {
   error?: string;
   errorStatus?: number;
 }
+
+// Qianwen (Alibaba Cloud Bailian) Token Plan instance from DescribeFrInstances.
+export interface QianwenTokenPlan {
+  planName: string;
+  edition: 'personal' | 'team' | 'addon';
+  totalCredits: number;
+  remainingCredits: number;
+  usedPercent: number;
+  unit: string;
+  status: string;
+  endTime: number | null;
+  enableRenew: boolean;
+  instanceId: string;
+}
+
+export interface QianwenQuotaState {
+  status: 'idle' | 'loading' | 'success' | 'error';
+  plans: QianwenTokenPlan[];
+  error?: string;
+  errorStatus?: number;
+}

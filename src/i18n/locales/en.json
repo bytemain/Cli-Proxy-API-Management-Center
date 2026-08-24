@@ -514,6 +514,18 @@
     "pay_as_you_go_enabled": "Enabled, cap {{cap}}",
     "pay_as_you_go_disabled": "Disabled"
   },
+  "qwen_quota": {
+    "title": "Qwen Token Plan",
+    "empty_title": "No Qianwen Auth Files",
+    "empty_desc": "Login to Qianwen via OAuth on the OAuth page to view Token Plan usage.",
+    "idle": "Click here to refresh Token Plan usage",
+    "loading": "Loading Token Plan usage...",
+    "load_failed": "Failed to load usage: {{message}}",
+    "missing_auth_index": "Auth file missing auth_index",
+    "empty_data": "No active Token Plan found",
+    "expires_at": "expires {{date}}",
+    "console_link": "Open Bailian Console"
+  },
   "vertex_import": {
     "title": "Vertex JSON Login",
     "description": "Upload a Google service account JSON to store it as auth-dir/vertex-<project>.json using the same rules as the CLI vertex-import helper.",
@@ -705,6 +717,15 @@
     "xai_oauth_title": "xAI OAuth",
     "xai_oauth_button": "Start xAI Login",
     "xai_oauth_hint": "Login to xAI Grok through OAuth flow, automatically obtain and save authentication files.",
+    "qianwen_oauth_title": "Qwen (Bailian)",
+    "qianwen_oauth_button": "Start Qwen Login",
+    "qianwen_oauth_hint": "Login to Alibaba Cloud Bailian through OAuth flow to query Token Plan usage and quota. This is separate from the qwen-api-key used for inference.",
+    "qianwen_oauth_url_label": "Authorization URL:",
+    "qianwen_oauth_status_waiting": "Waiting for authentication...",
+    "qianwen_oauth_status_success": "Authentication successful!",
+    "qianwen_oauth_status_error": "Authentication failed:",
+    "qianwen_oauth_start_error": "Failed to start Qianwen OAuth:",
+    "qianwen_oauth_polling_error": "Failed to check authentication status:",
     "xai_oauth_url_label": "Authorization URL:",
     "xai_open_link": "Open Link",
     "xai_copy_link": "Copy Link",
@@ -1474,7 +1495,8 @@
       "qiniuCloud": "Qiniu Cloud",
       "lmuAI": "LMU AI (Lingmou AI)",
       "infistar": "Infistar",
-      "kimi": "Kimi"
+      "kimi": "Kimi",
+      "qwen": "Qwen"
     },
     "table": {
       "key": "Key",

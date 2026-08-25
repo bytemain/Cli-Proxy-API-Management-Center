@@ -501,6 +501,18 @@
     "pay_as_you_go_enabled": "Включено, лимит {{cap}}",
     "pay_as_you_go_disabled": "Отключено"
   },
+  "qwen_quota": {
+    "title": "Qwen Token Plan",
+    "empty_title": "Нет файлов авторизации Qianwen",
+    "empty_desc": "Войдите в Qianwen через OAuth на странице OAuth, чтобы увидеть использование Token Plan.",
+    "idle": "Нажмите, чтобы обновить использование Token Plan",
+    "loading": "Загрузка использования Token Plan...",
+    "load_failed": "Не удалось загрузить использование: {{message}}",
+    "missing_auth_index": "В файле авторизации нет auth_index",
+    "empty_data": "Активный Token Plan не найден",
+    "expires_at": "истекает {{date}}",
+    "console_link": "Открыть консоль Bailian"
+  },
   "vertex_import": {
     "title": "Вход с Vertex JSON",
     "description": "Загрузите JSON ключа сервисного аккаунта Google, чтобы сохранить его как auth-dir/vertex-<project>.json по тем же правилам, что и помощник CLI vertex-import.",
@@ -692,6 +704,15 @@
     "xai_oauth_title": "xAI OAuth",
     "xai_oauth_button": "Начать вход xAI",
     "xai_oauth_hint": "Выполните вход в xAI Grok через OAuth и автоматически получите/сохраните файлы авторизации.",
+    "qianwen_oauth_title": "Qwen (Bailian)",
+    "qianwen_oauth_button": "Начать вход Qwen",
+    "qianwen_oauth_hint": "Войдите в Alibaba Cloud Bailian через OAuth для запроса использования и квот Token Plan. Отдельно от qwen-api-key для инференса.",
+    "qianwen_oauth_url_label": "URL авторизации:",
+    "qianwen_oauth_status_waiting": "Ожидание аутентификации...",
+    "qianwen_oauth_status_success": "Аутентификация успешна!",
+    "qianwen_oauth_status_error": "Ошибка аутентификации:",
+    "qianwen_oauth_start_error": "Не удалось запустить Qianwen OAuth:",
+    "qianwen_oauth_polling_error": "Не удалось проверить статус аутентификации:",
     "xai_oauth_url_label": "URL авторизации:",
     "xai_open_link": "Открыть ссылку",
     "xai_copy_link": "Скопировать ссылку",
@@ -1452,7 +1473,8 @@
       "qiniuCloud": "Qiniu Cloud",
       "lmuAI": "LMU AI (Lingmou AI)",
       "infistar": "Infistar",
-      "kimi": "Kimi"
+      "kimi": "Kimi",
+      "qwen": "Qwen"
     },
     "table": {
       "key": "Ключ",

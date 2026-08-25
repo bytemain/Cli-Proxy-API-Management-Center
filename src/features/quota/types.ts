@@ -99,4 +99,5 @@ export function bindQuotaClasses(module: Record<string, string>, source: string)
 export interface QuotaBodyProps<TState> {
   quota: TState;
   classes: QuotaClassMap;
+  t: (key: string, options?: Record<string, unknown>) => string;
 }

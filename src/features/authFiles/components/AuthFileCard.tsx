@@ -15,7 +15,10 @@ import {
 import { ProviderStatusBar } from '@/components/providers/ProviderStatusBar';
 import type { AuthFileItem } from '@/types';
 import { resolveAuthProvider } from '@/utils/quota';
-import { statusBarDataFromRecentRequests } from '@/utils/recentRequests';
+import {
+  normalizeRecentRequestAuthIndex,
+  statusBarDataFromRecentRequests,
+} from '@/utils/recentRequests';
 import { formatFileSize } from '@/utils/format';
 import {
   QUOTA_PROVIDER_TYPES,
@@ -107,7 +110,8 @@ export function AuthFileCard(props: AuthFileCardProps) {
 
   const successCount = file.successCount ?? 0;
   const failureCount = file.failureCount ?? 0;
-  const authIndexKey = typeof file.authIndex === 'string' ? file.authIndex : null;
+  const rawAuthIndex = file['auth_index'] ?? file.authIndex;
+  const authIndexKey = normalizeRecentRequestAuthIndex(rawAuthIndex);
   const statusData =
     (authIndexKey && statusBarCache.get(authIndexKey)) ||
     statusBarDataFromRecentRequests(file.recentRequests ?? []);
